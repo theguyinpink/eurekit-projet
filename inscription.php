@@ -362,26 +362,41 @@
     </style>
 
     <nav class="navbar navbar-expand-lg flex-column " id="navbar">
-        <a class="navbar-brand" style="color: #fff">
+        <a class="navbar-brand" href="index.php" style="color: #fff">
             <img src="img/logo_eurekit.png" alt="Logo EurekiT">EurekiT
         </a>
         <div id="navbarNav">
             <ul class="navbar-nav mt-2">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php"">Accueil</a>
+                    <a class="nav-link" href="vehicule.php"">Reservation de Vehicule</a>
                 </li>
                 <li class=" nav-item">
-                        <a class="nav-link" href="vehicule.php"">Reservation de Vehicule</a>
-                </li>
-                <li class=" nav-item">
-                            <a class="nav-link" href="contact.php">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#contenu">A propos</a>
+                    <a class="nav-link" href="#contenu">A propos</a>
                 </li>
+                <!--Afficher les informations du compte et les reservations faites-->
+                <div class="profile">
+                    <img src="img/profile-icon.png" alt="Profile Icon" class="profile-icon">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a class="link" href="informations.php">Informations</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="link" href="mes-reservations.php">Mes Reservations</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="link" href="deconnexion.php">Se deconnecter</a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </ul>
         </div>
     </nav>
+
 
     <div class="form">
 

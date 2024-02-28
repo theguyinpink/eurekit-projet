@@ -75,7 +75,7 @@
             /* Ensure text is visible */
         }
 
-        
+
 
         .carousel-control-prev span,
         .carousel-control-next span {
@@ -233,6 +233,62 @@
                 box-shadow: 0 0 0 2px #fff;
                 /* Ajoute une ombre au bouton lorsqu'il est focusé */
             }
+        }
+
+        /* Profile section styles */
+        .profile {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .profile-icon {
+            cursor: pointer;
+            border-radius: 50%;
+            max-height: 50px;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 0;
+            left: -350%;
+            background-color: #fff;
+            display: none;
+            /* initially hidden */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .dropdown-item {
+            padding: 5px 10px;
+            text-align: left;
+            cursor: pointer;
+
+            /* Hover effect for menu items */
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+
+        /* Show dropdown menu on hover */
+        .profile:hover .dropdown {
+            display: block;
+        }
+
+        .link {
+            font-size: 16px;
+            color: #1d3f88;
+            text-decoration: none;
+            /* Remove underline */
+            padding: 10px 20px;
+            /* Increase clickable area */
+            transition: background-color 0.2s ease-in-out;
+            /* Add hover effect */
+        }
+
+        .link:hover {
+            color: #1d3f88;
         }
 
         /* Media queries pour différentes résolutions */
@@ -541,6 +597,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contenu">A propos</a>
                 </li>
+                <!--Afficher les informations du compte et les reservations faites-->
+                <div class="profile">
+                    <img src="img/profile-icon.png" alt="Profile Icon" class="profile-icon">
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a class="link" href="informations.php">Informations</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="link" href="mes-reservations.php">Mes Reservations</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="link" href="deconnexion.php">Se deconnecter</a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </ul>
         </div>
     </nav>
