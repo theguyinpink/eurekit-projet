@@ -153,6 +153,55 @@
             font-size: 20px;
         }
 
+        .profile {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .profile-icon {
+            cursor: pointer;
+            border-radius: 50%;
+            max-height: 50px;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 0;
+            left: -350%;
+            background-color: #fff;
+            display: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .dropdown-item {
+            padding: 5px 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .profile:hover .dropdown {
+            display: block;
+        }
+
+        .link {
+            font-size: 16px;
+            color: #1d3f88;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .link:hover {
+            color: #1d3f88;
+        }
+
 
         /* Media queries pour différentes résolutions */
 

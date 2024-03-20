@@ -102,18 +102,20 @@ if (isset($_GET["erreur"]) && $_GET["erreur"] == 1) {
 
         /* Exclude the form from the background color */
         .form {
+
             background-color: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-top: 50px;
-            margin-left: 20px;
-            margin-right: 20px;
             color: #1d3f88;
+            width: 550px;
+            margin: 0 auto;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
+
 
         label {
             display: block;
@@ -573,7 +575,7 @@ if (isset($_GET["erreur"]) && $_GET["erreur"] == 1) {
                         <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contenu">A propos</a>
+                    <a class="nav-link" href="index.php#contenu">A propos</a>
                 </li>
                 <!--Afficher les informations du compte et les reservations faites-->
                 <div class="profile">

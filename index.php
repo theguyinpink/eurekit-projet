@@ -605,7 +605,7 @@
                             <a class="link" href="informations.php">Informations</a>
                         </li>
                         <li class="dropdown-item">
-                            <a class="link" href="mes-reservations.php">Mes Reservations</a>
+                            <a class="link" href="mes_reservations.php">Mes Reservations</a>
                         </li>
                         <li class="dropdown-item">
                             <a class="link" href="deconnexion.php">Se deconnecter</a>
@@ -636,7 +636,7 @@
                         et plongez dans une expérience informatique exceptionnelle. Prêt à embarquer dans
                         le futur numérique avec nous ?</p>
                     <button type="button" class="btn btn-lg btn-primary"
-                        onclick="window.location.href='inscription.php'">
+                        onclick="window.location.href='connexion.php'">
                         Connexion / Inscription
                     </button>
 
@@ -817,9 +817,6 @@
 
 </body>
 
-<button type="button" class="btn btn-lg btn-primary" id="deconnexion" onclick="window.location.href='deconnexion.php'">
-    Se déconnecter
-</button>
 
 
 </html>
